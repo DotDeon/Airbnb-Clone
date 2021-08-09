@@ -75,7 +75,12 @@ function Header({ placeholder }) {
 
       {/* Right */}
       <div className="flex items-center space-x-4 justify-end text-gray-500">
-        <p className="hidden md:inline-flex cursor-pointer hover:text-red-400">
+        <p
+          className="hidden md:inline-flex cursor-pointer hover:text-red-400"
+          onClick={() =>
+            window.open("https://github.com/DotDeon/Airbnb-Clone", "_blank")
+          }
+        >
           View on Github
         </p>
         <GlobeAltIcon className="h-6 cursor-pointer" />
